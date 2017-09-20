@@ -25,13 +25,13 @@ public class MainTest {
 	}
 
 	@Before
-	public static void setUp() throws Exception {
+	public void setUp() throws Exception {
 		System.out.print("in setUp method");
 		main = new Main();
 	}
 
 	@After
-	public static void tearDown() throws Exception {
+	public void tearDown() throws Exception {
 		System.out.print("in tearDown method");
 		main = new Main();
 	}
@@ -48,18 +48,18 @@ public class MainTest {
 	
 	@Test
 	public final void testSum() {
-		assertEquals(2, main.sum(new int[] {1, 2, 3}));
-		assertEquals(-2, main.sum(new int[] {1, -2, 3}));
+		assertEquals(6, main.sum(new int[] {1, 2, 3}));
+		assertEquals(2, main.sum(new int[] {1, -2, 3}));
 	}
 
 	@Test
 	public final void testFrequency() {
-		assertEquals(1, main.frequency(new int[] {1, 2, 3}, 0));
+		assertEquals(0, main.frequency(new int[] {1, 2, 3}, 0));
 	}
 
 	@Test
 	public final void testFrequencyPercentage() {
-	
+		
 	}
 
 }
