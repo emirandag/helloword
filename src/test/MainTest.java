@@ -59,7 +59,13 @@ public class MainTest {
 
 	@Test
 	public final void testFrequencyPercentage() {
-		
+		int[] values = {3, 4, 3, 5, 1, 2, 3, 0};
+		assertEquals(37.5, main.frequencyPercentage(values, 3), 1e-4);
 	}
 
+	public final void testMerge() {
+		int[] values = {3, 7, 9, 10, 13, 21};
+		int[] valuees = {11};
+		assertEquals(3, 7, 9, 10, 11, 13, 21, main.merge(values, n));
+	}
 }

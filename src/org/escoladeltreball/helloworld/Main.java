@@ -64,10 +64,35 @@ public final class Main implements Utils {
 	@Override
 	public double frequencyPercentage(int[] values, int n) {
 		
-		
+		return ((double) frequency(values, n)) / values.length * 100;
 		
 		// TODO Auto-generated method stub
-		return 0;
+		
 	}
+	
+	public boolean isPresent(int [] values, int n) {
+		
+		for (int value: values) {
+			if (value == n);
+			return true;
+		}
+		return false;
+	}
+
+	@Override
+	public int[] merge(int[] values, int n) {
+		for (int value: values) {
+		
+				merge(values, n);
+			
+			
+		}
+		return null;
+	}
+
+	
+
+
+
 	
 }
